@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 button {
     border: 1px solid green;
     background-color: greenyellow;

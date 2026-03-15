@@ -33,7 +33,7 @@ const Country = ({ country, handleVisitedCountries }) => {
     }
     return (
         //<div className={`country ${visited ? 'country-visited' " 'country-not-visited'"}`}
-        <div className={`country ${visited && 'visited'}`}>
+        <div className={`country ${visited && 'bg-green-400 text-white'}`}>
             <img src={country.flags.flags.png} alt={country.flags.flags.alt} />
             <h3>Name: {country.name.common}</h3>
             <p>Population: {country.population.population}</p>
