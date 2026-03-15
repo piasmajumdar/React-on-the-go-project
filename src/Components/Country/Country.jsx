@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Country = ({country}) => {
-    // console.log(country.region.region);
+    // console.log(country);
     const currencyKeys = Object.values(country.currencies.currencies);
     const currency = currencyKeys[0];
     // console.log(currency.name)
