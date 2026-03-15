@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import './Country.css'
 
-const Country = ({ country }) => {
+const Country = ({ country, handleVisitedCountries }) => {
     // console.log(country);
+
+    // Currency Findings::::
     const currencyKeys = Object.values(country.currencies.currencies);
     const currency = currencyKeys[0];
     // console.log(currency.name)
+
+    // Lift Up function::::
+    // console.log(handleVisitedCountries)
 
     const [visited, setVisited] = useState(false);
 
@@ -24,6 +29,7 @@ const Country = ({ country }) => {
 
         // Method 3:
         setVisited(!visited)
+        handleVisitedCountries(country);
     }
     return (
         //<div className={`country ${visited ? 'country-visited' " 'country-not-visited'"}`}
